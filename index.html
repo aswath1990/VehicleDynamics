@@ -4,92 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dynamic Axle Weight Calculator</title>
-
-    <!-- Link to CSS -->
-    <link rel="stylesheet" href="styles.css">
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>Dynamic Axle Weight Calculator</h1>
+    <h1>Dynamic Axle Weight Calculator</h1>
 
-        <!-- Input Fields -->
-        <div class="form-group">
-            <label for="totalWeight">Total Weight \( W \) (N):</label>
-            <input type="number" id="totalWeight" placeholder="Enter W">
-        </div>
+    <!-- Input Fields -->
+    <label for="totalWeight">Total Weight \( W \) (N):</label>
+    <input type="number" id="totalWeight" placeholder="Enter W"><br>
 
-        <div class="form-group">
-            <label for="theta">Incline Angle \( \\theta \) (degrees):</label>
-            <input type="number" id="theta" placeholder="Enter angle θ">
-        </div>
+    <label for="theta">Incline Angle \( \\theta \) (degrees):</label>
+    <input type="number" id="theta" placeholder="Enter angle θ"><br>
 
-        <div class="form-group">
-            <label for="c">Distance \( c \) (m):</label>
-            <input type="number" id="c" placeholder="Enter c">
-        </div>
+    <label for="c">Distance \( c \) (m):</label>
+    <input type="number" id="c" placeholder="Enter c"><br>
 
-        <div class="form-group">
-            <label for="L">Wheelbase \( L \) (m):</label>
-            <input type="number" id="L" placeholder="Enter L">
-        </div>
+    <label for="L">Wheelbase \( L \) (m):</label>
+    <input type="number" id="L" placeholder="Enter L"><br>
 
-        <div class="form-group">
-            <label for="b">Distance \( b \) (m):</label>
-            <input type="number" id="b" placeholder="Enter b">
-        </div>
+    <label for="b">Distance \( b \) (m):</label>
+    <input type="number" id="b" placeholder="Enter b"><br>
 
-        <div class="form-group">
-            <label for="rhx">Horizontal Force \( R_{hx} \) (N):</label>
-            <input type="number" id="rhx" placeholder="Enter Rhx">
-        </div>
+    <label for="rhx">Horizontal Force \( R_{hx} \) (N):</label>
+    <input type="number" id="rhx" placeholder="Enter Rhx"><br>
 
-        <div class="form-group">
-            <label for="rhz">Vertical Force \( R_{hz} \) (N):</label>
-            <input type="number" id="rhz" placeholder="Enter Rhz">
-        </div>
+    <label for="rhz">Vertical Force \( R_{hz} \) (N):</label>
+    <input type="number" id="rhz" placeholder="Enter Rhz"><br>
 
-        <div class="form-group">
-            <label for="dh">Height \( d_h \) (m):</label>
-            <input type="number" id="dh" placeholder="Enter dh">
-        </div>
+    <label for="dh">Height \( d_h \) (m):</label>
+    <input type="number" id="dh" placeholder="Enter dh"><br>
 
-        <div class="form-group">
-            <label for="hh">Height to Hitch \( h_h \) (m):</label>
-            <input type="number" id="hh" placeholder="Enter hh">
-        </div>
+    <label for="hh">Height to Hitch \( h_h \) (m):</label>
+    <input type="number" id="hh" placeholder="Enter hh"><br>
 
-        <div class="form-group">
-            <label for="ax">Acceleration \( a_x \) (m/s²):</label>
-            <input type="number" id="ax" placeholder="Enter ax">
-        </div>
+    <label for="ax">Acceleration \( a_x \) (m/s²):</label>
+    <input type="number" id="ax" placeholder="Enter ax"><br>
 
-        <div class="form-group">
-            <label for="h">Height of CG \( h \) (m):</label>
-            <input type="number" id="h" placeholder="Enter h">
-        </div>
+    <label for="h">Height of CG \( h \) (m):</label>
+    <input type="number" id="h" placeholder="Enter h"><br>
 
-        <div class="form-group">
-            <label for="ha">Aerodynamic Force Height \( h_a \) (m):</label>
-            <input type="number" id="ha" placeholder="Enter ha">
-        </div>
+    <label for="ha">Aerodynamic Force Height \( h_a \) (m):</label>
+    <input type="number" id="ha" placeholder="Enter ha"><br>
 
-        <div class="form-group">
-            <label for="da">Aerodynamic Drag Force \( D_A \) (N):</label>
-            <input type="number" id="da" placeholder="Enter DA">
-        </div>
+    <label for="da">Aerodynamic Drag Force \( D_A \) (N):</label>
+    <input type="number" id="da" placeholder="Enter DA"><br>
 
-        <button onclick="calculateAxleWeights()">Calculate</button>
+    <button onclick="calculateAxleWeights()">Calculate</button>
 
-        <!-- Results -->
-        <div class="results">
-            <h3>Results:</h3>
-            <p>Front Axle Weight \( W_f \): <span id="frontAxleWeight">0</span> N</p>
-            <p>Rear Axle Weight \( W_r \): <span id="rearAxleWeight">0</span> N</p>
-        </div>
-    </div>
+    <!-- Results -->
+    <h3>Results:</h3>
+    <p>Front Axle Weight \( W_f \): <span id="frontAxleWeight">0</span> N</p>
+    <p>Rear Axle Weight \( W_r \): <span id="rearAxleWeight">0</span> N</p>
 
     <script src="app.js"></script>
 </body>
